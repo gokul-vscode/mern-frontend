@@ -10,22 +10,17 @@ function Banner() {
   const [activeBrand, setActiveBrand] = useState("");
 
   const navigate = useNavigate();
-
-  useEffect(() => {
-
-    fetch("http://localhost:5000/api/products")
+useEffect(() => {
+    // Localhost link-ku bathila Render link-ai podunga
+    fetch("https://mern-backend-yqlo.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
-
         setProducts(data);
-
         if (data.length > 0) {
           setActiveBrand(data[0].category);
         }
-
       })
-      .catch((err) => console.log(err));
-
+      .catch((err) => console.log("Error fetching products:", err));
   }, []);
 
   const brands = [...new Set(products.map((p) => p.category))];
