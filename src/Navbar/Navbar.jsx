@@ -117,7 +117,7 @@ const Navbar = () => {
       <div className="logo">Shoe-Mart</div>
 
       <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <a href="#">Home</a>
+        <a href="/">Home</a>
         <a href="#products">Products</a>
         <a href="#contact">Contacts</a>
       </nav>
