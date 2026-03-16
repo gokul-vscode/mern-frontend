@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Tab Container */
+.brand-tabs {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Tab Buttons */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: white;
+  border: 2px solid orange;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  background: orange;
+  color: white;
+}
+
+.tab.active {
+  background: orange;
+  color: white;
+}
+
+/* Tab Content */
+.tab-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.brand-card {
+  cursor: pointer;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.brand-card img {
+  max-width: 100%;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+   border-radius: 8px;
+}
+
+.brand-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.brand-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tab-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-card {
+    width: 90%;
+  }
+}
+.brand-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.brand-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.cart-icon{
+font-size:22px;
+color:rgb(151, 146, 136);
+cursor:pointer;
+margin-top:10px;
+/* background-color: red; */
+transition:0.3s;
+}
+
+.cart-icon:hover{
+color:#ff6600;
+transform:scale(1.2);
+}
